@@ -1,0 +1,18 @@
+package com.kasppermotors.principal.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("venda")
+public class VendaController {
+
+	@GetMapping
+	public String abreFormularioCliente() {
+		return"cadastro3/venda";
+		
+		
+		
+	}
+}
